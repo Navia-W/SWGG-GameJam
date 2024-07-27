@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://byevyek6woy88"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_b7iur"]
+[ext_resource type="AudioStream" uid="uid://d3rcw53r2ronc" path="res://Assets/Audio/Music/MainMenu/MenuTheme_v1.wav" id="2_fw2e4"]
+[ext_resource type="Texture2D" uid="uid://ry8kfbjtjdgt" path="res://Assets/UI/Buttons/TempButton.png" id="2_s80v0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_muln4"]
+texture = ExtResource("2_s80v0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hqoqe"]
+texture = ExtResource("2_s80v0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wugam"]
+texture = ExtResource("2_s80v0")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b7iur")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 210.0
+offset_right = 567.0
+offset_bottom = 233.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_muln4")
+text = "Start Game"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 310.0
+offset_right = 567.0
+offset_bottom = 333.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_hqoqe")
+text = "   Options   "
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 410.0
+offset_right = 567.0
+offset_bottom = 433.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_wugam")
+text = "Quit Game"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_fw2e4")
+autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 97.0
+offset_right = 945.0
+offset_bottom = 165.0
+theme_override_font_sizes/normal_font_size = 44
+text = "SHADOW WIZARD GOBLIN GANG"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 618.0
+offset_right = 120.0
+offset_bottom = 648.0
+text = "V. 0.0.1a"
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

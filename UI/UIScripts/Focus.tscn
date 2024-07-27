@@ -1,0 +1,127 @@
+[gd_scene load_steps=19 format=3 uid="uid://bmsm5rax8xeuu"]
+
+[ext_resource type="Texture2D" uid="uid://ck0dackgb26cm" path="res://UI/UIArt/book.png" id="1_by3xq"]
+[ext_resource type="Script" path="res://UI/UIScripts/Hotbar.gd" id="1_tt7hi"]
+[ext_resource type="Texture2D" uid="uid://c0c13fijw5eie" path="res://UI/UIArt/small elements/fire_smol.png" id="3_ccsjt"]
+[ext_resource type="Texture2D" uid="uid://c5hx4x3onvve0" path="res://UI/UIArt/Selection text/fire_hover.png" id="4_i4oen"]
+[ext_resource type="Texture2D" uid="uid://cqb7ikq1jd5dx" path="res://UI/UIArt/Selection text/fire_select.png" id="5_appxy"]
+[ext_resource type="Texture2D" uid="uid://c0qw06edrr068" path="res://UI/UIArt/small elements/water_smol.png" id="6_5jug2"]
+[ext_resource type="Texture2D" uid="uid://gbgafbjt6mjh" path="res://UI/UIArt/Selection text/water_hover.png" id="7_qpc7s"]
+[ext_resource type="Texture2D" uid="uid://ct2h0tn7fma42" path="res://UI/UIArt/Selection text/water_select.png" id="8_7dsfu"]
+[ext_resource type="Texture2D" uid="uid://bxx84ry5w8c4q" path="res://UI/UIArt/small elements/earth_smol.png" id="9_jskw3"]
+[ext_resource type="Texture2D" uid="uid://blokw1w0wiwf" path="res://UI/UIArt/Selection text/earth_hover.png" id="10_jfeg7"]
+[ext_resource type="Texture2D" uid="uid://b6ahx77njqdcg" path="res://UI/UIArt/Selection text/earth_select.png" id="11_qjj22"]
+[ext_resource type="Texture2D" uid="uid://vevunk16hkko" path="res://UI/UIArt/small elements/air_smol.png" id="12_go0po"]
+[ext_resource type="Texture2D" uid="uid://blpgn4q3vhgme" path="res://UI/UIArt/Selection text/air_hover.png" id="13_2lgrh"]
+[ext_resource type="Texture2D" uid="uid://bklnse31wl2ah" path="res://UI/UIArt/Selection text/air_select.png" id="14_dbcs6"]
+[ext_resource type="Texture2D" uid="uid://b5xwxmk601w3b" path="res://UI/UIArt/big elemements/big_air.png" id="15_q8xvw"]
+[ext_resource type="Texture2D" uid="uid://dqmrfjfu624s" path="res://UI/UIArt/big elemements/big_earth.png" id="16_vn3vp"]
+[ext_resource type="Texture2D" uid="uid://bmlgqkbj0xqjb" path="res://UI/UIArt/big elemements/big_fire.png" id="17_intrs"]
+[ext_resource type="Texture2D" uid="uid://csethgs0wm0xi" path="res://UI/UIArt/big elemements/big_water.png" id="18_o3535"]
+
+[node name="Hotbar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tt7hi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -94.0
+offset_right = 61.0
+offset_bottom = -6.0
+grow_vertical = 0
+
+[node name="Book" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(55, 47)
+texture = ExtResource("1_by3xq")
+
+[node name="FireButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_ccsjt")
+flat = true
+
+[node name="FireHover" type="Sprite2D" parent="VBoxContainer/FireButton"]
+visible = false
+position = Vector2(32, 9)
+texture = ExtResource("4_i4oen")
+
+[node name="FireSelect" type="Sprite2D" parent="VBoxContainer/FireButton"]
+visible = false
+position = Vector2(32, 9)
+texture = ExtResource("5_appxy")
+
+[node name="WaterButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("6_5jug2")
+flat = true
+
+[node name="WaterHover" type="Sprite2D" parent="VBoxContainer/WaterButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("7_qpc7s")
+
+[node name="WaterSelect" type="Sprite2D" parent="VBoxContainer/WaterButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("8_7dsfu")
+
+[node name="EarthButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("9_jskw3")
+flat = true
+
+[node name="EarthHover" type="Sprite2D" parent="VBoxContainer/EarthButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("10_jfeg7")
+
+[node name="EarthSelect" type="Sprite2D" parent="VBoxContainer/EarthButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("11_qjj22")
+
+[node name="AirButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("12_go0po")
+flat = true
+
+[node name="AirHover" type="Sprite2D" parent="VBoxContainer/AirButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("13_2lgrh")
+
+[node name="AirSelect" type="Sprite2D" parent="VBoxContainer/AirButton"]
+visible = false
+position = Vector2(33, 9)
+texture = ExtResource("14_dbcs6")
+
+[node name="Container" type="Container" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="BigAir" type="Sprite2D" parent="VBoxContainer/Container"]
+visible = false
+position = Vector2(80, -48)
+texture = ExtResource("15_q8xvw")
+
+[node name="BigEarth" type="Sprite2D" parent="VBoxContainer/Container"]
+visible = false
+position = Vector2(79, -48)
+texture = ExtResource("16_vn3vp")
+
+[node name="BigFire" type="Sprite2D" parent="VBoxContainer/Container"]
+visible = false
+position = Vector2(81, -48)
+texture = ExtResource("17_intrs")
+
+[node name="BigWater" type="Sprite2D" parent="VBoxContainer/Container"]
+visible = false
+position = Vector2(80, -48)
+texture = ExtResource("18_o3535")

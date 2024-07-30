@@ -113,13 +113,15 @@
     Due to some personal stuff happening for one of our group members, they unfortunately had to step out early, leaving us with three remaining group members.<br>
     Additionally due to some personal happenings, the programming side slowed down.<br>
     <br>
-    We tried our best to make what we could. it may not be a lot, but for us this was still a big learning project as non of us ever worked with Godot engine before.<br>
+    We tried our best to make what we could.<br>
+    it may not be a lot, but for us this was still a big learning project as non of us ever worked with Godot engine before.<br>
     On the art side there's also been a lot of learning progress, new ways of working with Pixel art and overal improvements.<br>
     <br>
     <br>
-    "While we may not have a finished project, I am still happy with the small results we have. I learned a lot about Godot Engine and it's language.<br>
-    And I learned a lot about working with other people, specifically with time-zone differences. Time-zones did not make it much easier for us, but we <br>
-    gave it our all.<br>
+    "While we may not have a finished project, I am still happy with the small results we have.<br>
+    I learned a lot about Godot Engine and it's language.<br>
+    And I learned a lot about working with other people, specifically with time-zone differences.<br>
+    Time-zones did not make it much easier for us, but we gave it our all.<br>
     Next time I do a game jam however, I will try to focus myself more and hope I won't be on new medication that makes me dizzy."<br>
     ~YokaiFoxy<br>
   </p></b>

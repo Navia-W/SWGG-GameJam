@@ -108,7 +108,7 @@
 
 <div id="Notes">
   <h2 align="center">Documents</h2>
-  <b><p align="center">
+  <b><p align="left">
   Some notes about the project.<br>
     Due to some personal stuff happening for one of our group members, they unfortunately had to step out early, leaving us with three remaining group members.<br>
     Additionally due to some personal happenings, the programming side slowed down.<br>

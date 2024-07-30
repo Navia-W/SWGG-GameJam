@@ -26,6 +26,8 @@
           <li><a href="#DAW">DAW</a></li>
         </ul>
       </li>
+      <li><a href="#Documents">Documents</a></li>
+      <li><a href="#Notes">Additional Notes</a></li>
       <li><a href="#Contributors">Contributors</a></li>
     </ol>
 
@@ -97,6 +99,31 @@
   </div>
 </div>
 
+<div id="Documents">
+  <h2 align="center">Documents</h2>
+  <b><p align="center">
+  <a href="https://docs.google.com/document/d/1Yix87-nrvvnstWfgGRYGri3a5p2AtzkkdVjP1ZT4ILI/edit">Game Design Document</a>
+  </p></b>
+</div>
+
+<div id="Notes">
+  <h2 align="center">Documents</h2>
+  <b><p align="center">
+  Some notes about the project.<br>
+    Due to some personal stuff happening for one of our group members, they unfortunately had to step out early, leaving us with three remaining group members.<br>
+    Additionally due to some personal happenings, the programming side slowed down.<br>
+    <br>
+    We tried our best to make what we could. it may not be a lot, but for us this was still a big learning project as non of us ever worked with Godot engine before.<br>
+    On the art side there's also been a lot of learning progress, new ways of working with Pixel art and overal improvements.<br>
+    <br>
+    <br>
+    "While we may not have a finished project, I am still happy with the small results we have. I learned a lot about Godot Engine and it's language.<br>
+    And I learned a lot about working with other people, specifically with time-zone differences. Time-zones did not make it much easier for us, but we <br>
+    gave it our all.<br>
+    Next time I do a game jam however, I will try to focus myself more and hope I won't be on new medication that makes me dizzy."<br>
+    ~YokaiFoxy<br>
+  </p></b>
+</div>
 
 <div id="Contributors">
   <h2 align="center">Contributors</h2>
